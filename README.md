@@ -6,4 +6,5 @@ tareas de clase de programación
 este repositori tiene los codigos de la unida 3, del sfoware *visual studio* y 
 bliblioteca * a- frame* 
 vinculos de las tecnologias: 
-[a-frame]https://aframe.io/
+[a-frame]https://aframe.io/  
+la clase 5 hicimos un ejercicio de  **ECS** de a-frame.
