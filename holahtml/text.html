@@ -1,14 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>txt</title>
+    <title>TEXTO EN A-FRAME</title>
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
 </head>
 <body>
     <a-scene>
-        <a-entity text="value: Hola texto; color: black" position="0.5 1.5 -2"></a-entity>
+        <a-text 
+        value="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.?!/:;,*§£$ø@+°-~#&²'{}[]|`\()=%*µàâáéèëêïîíöôóùüûúÀÂÁÉÈËÊÉÏÎÍÖÔÓÜÛÚçÇ€ñ Ñ"
+        font="assets/fontsABC/ABC-msdf.json"
+        font-image="assets/fontsABC/ABC.png"
+        negate="false"
+        color="red"
+        scale="2 2 1"
+        position="-2 2 -4">
+    </a-text><a-entity 
+    text="value:Y en las noches en que las estrellas salen AÑA"
+    font= "assets/fontsABC/ABC-msdf.json" 
+    font-image = "assets/fontsABC/ABC.png"
+    color ="blue" 
+    negate="false"
+    scale="2 2 1" 
+    position="0.5 1.5 -2">
+</a-entity>
     </a-scene>
 </body>
 </html>
