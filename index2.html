@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El patio de los sueños</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <!-- Sistema de gestión de assets -->
+        <a-assets>
+            <audio id="audioPatio" src="assets/sonido/patio-suenos.mp3"></audio>
+            <img id="texturaSuelo" src="assets/texturas/suelo-textura.jpg">
+            <video id="videoExploracion" src="assets/video/exploracion.mp4" autoplay loop></video>
+        </a-assets>
+
+        <!-- Entorno -->
+        <a-entity environment="preset: forest; groundTexture: none; skyType: gradient; skyColor: #2E2B5F"></a-entity>
+
+        <!-- Figuras geométricas -->
+        <a-box position="-2 1 -5" material="src: #texturaSuelo; color: #4A90E2"></a-box>
+        <a-sphere position="0 1 -5" radius="1.5" color="#FF7F50"></a-sphere>
+        <a-cylinder position="2 1 -5" radius="0.8" height="2" color="#90EE90"></a-cylinder>
+
+        <!-- Texto relacionado con el cuento -->
+        <a-text value="Bienvenido al patio de los sueños" position="-3 2 -4" color="#FFFFFF"></a-text>
+        <a-text value="Aquí todo es posible" position="-3 1.5 -4" color="#FFFF00"></a-text>
+
+        <!-- Cámara y cursor -->
+        <a-camera position="0 1.6 0">
+            <a-cursor color="#FFFFFF"></a-cursor>
+        </a-camera>
+
+        <!-- Audio -->
+        <a-entity sound="src: #audioPatio; autoplay: true; loop: true; volume: 0.5"></a-entity>
+
+        <!-- Video -->
+        <a-video src="#videoExploracion" position="0 1 -8" width="4" height="2.25"></a-video>
+    </a-scene>
+</body>
+</html>
